@@ -6,11 +6,11 @@ import json
 st.set_page_config(page_title='House Price Prediction App', layout='wide', initial_sidebar_state='expanded')
 
 # Load column names from JSON file
-with open('/home/sabeer/Desktop/house_price/model/columns.json', 'r') as f:
+with open('/home/sabeer/Desktop/house_price/columns.json', 'r') as f:
     columns = json.load(f)
 
 # Load the trained model
-with open('/home/sabeer/Desktop/house_price/model/bengaluru_house_price_model.pkl', 'rb') as file:
+with open('/home/sabeer/Desktop/house_price/bengaluru_house_price_model.pkl', 'rb') as file:
     linear_model = pickle.load(file)
 
 # Define prediction function
